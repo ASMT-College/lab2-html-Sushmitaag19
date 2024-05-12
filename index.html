@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="login.php" method="get">
+        <fieldset>
+        <Legend>SignUp</Legend>
+        <label for="username">Username <br>
+            <input type="text" name="username" class="uname" placeholder="Username"> <br></label> <br>
+
+        <label for="name">Name <br>
+            <input type="text" name="name" class="uname" placeholder="Name"> <br>
+        </label> <br>
+        
+        <label for="pass">Password <br>
+            <input type="password" name="pass" minlength="10" required id="pass" class="uname"> <br>
+        </label> <br>
+        
+        <label for="cpass">Confirmed Password <br>
+            <input type="password" name="cpass" minlength="10" required id="cpass" class="uname"> <br></label> <br>
+        
+        <label for="gender" class="gender">Gender <br>
+            <input type="radio" name="gender" class="gen" value="m">
+            <label for="m">M</label>
+            <input type="radio" name="gender" class="gen" value="f">
+            <label for="f">F</label>
+            <input type="radio" name="gender" class="gen" value="o">
+            <label for="o">Others</label><br>
+        </label> <br>
+        
+        <label for="hobby" class="hobby">Hobbies <br>
+            <input type="checkbox" name="hobby" class="read" value="read">
+            <label for="read">Read</label>
+            <input type="checkbox" name="hobby" class="copy" value="copy">
+            <label for="copy">Copy</label>
+            <input type="checkbox" name="hobby" class="sleep" value="sleep">
+            <label for="sleep">Sleep</label> <br>
+        </label> <br>
+        
+        <label for="country">Country</label> <br>
+        <select>
+            <option value="1">Select country</option>
+            <option value="a">Nepal</option>
+            <option value="b">China</option>
+            <option value="c">South Korea</option>
+            <option value="d">Japan</option>
+            <option value="e">Others</option>
+        </select><br> <br>
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+</body>
+</html>
